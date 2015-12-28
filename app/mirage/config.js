@@ -1,5 +1,7 @@
 export default function() {
 
+  // These comments are here to help you get started. Feel free to delete them.
+
   /*
     Config (with defaults).
 
@@ -70,59 +72,6 @@ export default function() {
     });
 
   */
-  this.get('/list', function() {
-    return {
-      data: [{
-        type: 'bugs',
-        id: 1,
-        attributes: {
-          bugDescription: 'Super buggy bug',
-          stepsToReproduce: '1. open software 2. see bug',
-          expectedBehavior: 'not see a bug when the software is open',
-          observedBehavior: 'it shows a clear bug in the middle of the screen',
-          imageURL: '',
-          assignedTo: 'Jean',
-          isFixed: true
-        }
-      }, {
-        type: 'bugs',
-        id: 2,
-        attributes: {
-          bugDescription: 'Mr Skeltal in my game',
-          stepsToReproduce: '1. open game 2. check mr skeltal',
-          expectedBehavior: 'mr skeltal shouldn\'t be there',
-          observedBehavior: 'a mr skeltal like in the image',
-          imageURL: 'http://www.cinemablend.com/images/sections/69159/Funniest_Video_Game_Bugs_69159.jpg',
-          assignedTo: 'Mr. Skeltal',
-          isFixed: false
-        }
-      }, {
-        type: 'bugs',
-        id: 3,
-        attributes: {
-          bugDescription: 'Computer room is on fire',
-          stepsToReproduce: '1. go to main room 2. observe fire',
-          expectedBehavior: 'expected not fire',
-          observedBehavior: 'red fire with lots of smoke',
-          imageURL: 'https://i.ytimg.com/vi/y_pwBQuINSA/maxresdefault.jpg',
-          assignedTo: 'firefighter (any)',
-          isFixed: false
-        }
-      }, {
-        type: 'bugs',
-        id: 4,
-        attributes: {
-          bugDescription: 'Computer room extinguisher does not work properly',
-          stepsToReproduce: '1. go to room on fire (see bug #3) 2. observe fire 3. try using extinguisher',
-          expectedBehavior: 'expected to properly release water',
-          observedBehavior: 'extinguisher is on fire',
-          imageURL: 'http://thenerderypublic.com/wp-content/uploads/2015/09/fire.jpg',
-          assignedTo: 'firefighter (any) or extinguisher\'s support',
-          isFixed: false
-        }
-      }]
-    };
-  });
 }
 
 /*
